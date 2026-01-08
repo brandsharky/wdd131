@@ -17,6 +17,10 @@ body {
   min-height: 100dvh;
   overflow-x: hidden;
 
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
   background-color: var(--white);
 }
 
@@ -58,7 +62,7 @@ nav ul li {
 nav ul li a {
   display: block;
 
-  padding: 0.5rem 1rem;
+  padding: 1rem;
 
   text-align: center;
   text-decoration: none;
@@ -87,7 +91,7 @@ main {
 
   background-color: var(--white);
 
-  border: 1px solid black;
+  border: 1px solid var(--gray);
 }
 h1 {
   grid-column: 1 / 3;
