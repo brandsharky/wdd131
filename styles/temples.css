@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", system-ui, sans-serif;
+
+  background-color: #f4f7fb;
+  color: #222;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+
+  background-color: #1f3c88;
+  color: white;
+}
+header h2 {
+  font-size: 1.5rem;
+}
+
+#menu-button {
+  font-size: 1.6rem;
+
+  background: none;
+  border: none;
+  color: white;
+
+  cursor: pointer;
+
+  transition: background-color 0.5s ease;
+}
+#menu-button:hover {
+  background-color: lightskyblue;
+}
+
+
+nav {
+  display: none;
+  flex-direction: column;
+
+  width: 100%;
+
+  background-color: #1f3c88;
+}
+nav a {
+  padding: 0.75rem;
+
+  text-decoration: none;
+  text-align: center;
+
+  color: white;
+
+  transition: background-color 0.5s ease;
+}
+nav a:hover {
+  background-color: #3a5fcf;
+}
+nav.show {
+  display: flex;
+}
+
+
+main {
+  max-width: 900px;
+
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+main h1 {
+  margin-bottom: 1.5rem;
+
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+figure {
+  padding: 0.5rem;
+
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+figure img {
+  width: 100%;
+  display: block;
+
+  border-radius: inherit;
+}
+figcaption {
+  margin-top: 0.5rem;
+
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+
+footer {
+  padding: 1rem;
+  margin-top: 2rem;
+
+  text-align: center;
+
+  background-color: #1f3c88;
+  color: white;
+}
+
+
+
+
+
+

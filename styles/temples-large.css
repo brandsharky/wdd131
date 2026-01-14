@@ -1,0 +1,26 @@
+
+@media (min-width: 700px) {
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  nav a {
+    padding: 0 1rem;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+
