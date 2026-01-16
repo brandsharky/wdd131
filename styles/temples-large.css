@@ -1,25 +1,21 @@
 
-@media (min-width: 700px) {
-  #menu-button {
+@media (min-width: 768px) {
+  .hamburger {
     display: none;
   }
 
-  nav {
+  .nav {
+    flex-wrap: nowrap;
+  }
+
+  .nav-links {
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
+
     width: auto;
-  }
 
-  nav a {
-    padding: 0 1rem;
-  }
-
-  header {
-    justify-content: space-between;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 0;
   }
 }
 

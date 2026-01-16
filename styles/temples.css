@@ -10,60 +10,71 @@ body {
   color: #222;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
+
+
+
+
+header {
   padding: 1rem;
 
   background-color: #1f3c88;
   color: white;
 }
 header h2 {
+  font-weight: bold;
   font-size: 1.5rem;
 }
 
-#menu-button {
-  font-size: 1.6rem;
+
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+}
+.nav-links {
+  display: none;
+
+  width: 100%;
+
+  flex-direction: column;
+  gap: 1.5rem;
+
+  margin-top: 1rem;
+
+  list-style: none;
+  text-align: center;
+}
+.nav-links a {
+  padding: 0.25rem;
+
+  text-decoration: none;
+
+  color: white;
+
+  transition: background-color 0.5s ease;
+}
+.nav-links a:hover {
+  background-color: #1e293b;
+}
+.nav-links.active {
+  display: flex;
+}
+
+.hamburger {
+  font-size: 1.5rem;
 
   background: none;
   border: none;
   color: white;
 
   cursor: pointer;
-
-  transition: background-color 0.5s ease;
-}
-#menu-button:hover {
-  background-color: lightskyblue;
 }
 
-
-nav {
-  display: none;
-  flex-direction: column;
-
-  width: 100%;
-
-  background-color: #1f3c88;
-}
-nav a {
-  padding: 0.75rem;
-
-  text-decoration: none;
-  text-align: center;
-
-  color: white;
-
-  transition: background-color 0.5s ease;
-}
-nav a:hover {
-  background-color: #3a5fcf;
-}
-nav.show {
-  display: flex;
-}
 
 
 main {
@@ -77,6 +88,8 @@ main h1 {
 
   text-align: center;
 }
+
+
 
 .gallery {
   display: grid;
@@ -106,7 +119,6 @@ figcaption {
 
 
 
-
 footer {
   padding: 1rem;
   margin-top: 2rem;
@@ -116,9 +128,5 @@ footer {
   background-color: #1f3c88;
   color: white;
 }
-
-
-
-
 
 
