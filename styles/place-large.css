@@ -1,0 +1,50 @@
+
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+
+  main {
+    position: relative;
+  }
+
+
+  main img {
+    aspect-ratio: 2 / 1;
+    max-height: none;
+  }
+
+  section {
+    position: absolute;
+
+    width: fit-content;
+
+    opacity: 0.8;
+  }
+  .data {
+    top: 2rem;
+    left: 2rem;
+  }
+  .weather {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+
+
+
+
+
+
+  .weather h2::after {
+    content: "⛅";
+  }
+  .weather-icon {
+    display: none;
+  }
+}
+
+

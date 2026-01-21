@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oahu | Brandon Arroyo</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Oahu</h1>
+  </header>
+
+
+
+  <main>
+    <picture>
+      <source media="(min-width: 1000px)" srcset="images/large.webp">
+      <source media="(min-width: 500px)" srcset="images/medium.webp">
+      <img src="images/small.webp" alt="Oahu, Hawaii" >
+    </picture>
+
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li>Area:</li><li>597 sq mi</li>
+        <li>Population:</li><li>998,747</li>
+        <li>Capital:</li><li>Honolulu</li>
+        <li>Languages:</li><li>English, Hawaiian</li>
+        <li>Currency:</li><li>US Dollar</li>
+        <li>Time Zone:</li><li>UTC-10</li>
+        <li>Calling Code:</li><li>+808</li>
+        <li>Internet TLD:</li><li>.us</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img class="weather-icon" src="images/partly-cloudy.svg" alt="partly cloudy icon">
+      <ul>
+        <li>Temperature:</li><li id="temperature"></li>
+        <li>Conditions:</li><li>Partly Cloudy</li>
+        <li>Wind:</li><li id="windspeed"></li>
+        <li>Wind Chill:</li><li id="windchill"></li>
+      </ul>
+    </section>
+  </main>
+
+
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> | Brandon Arroyo | California, USA<br>
+    Last Modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+
+</body>
+</html>
