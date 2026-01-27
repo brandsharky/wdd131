@@ -1,0 +1,27 @@
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .nav {
+    flex-wrap: nowrap;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+
+    width: auto;
+
+    margin-top: 0;
+  }
+
+
+
+  #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+
