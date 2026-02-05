@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+
+  <main>
+    <form method="get" action="review.html">
+
+
+      <div class="form-field">
+        <label for="productName">Product Name</label>
+        <select id="productName" name="productName" required>
+          <option disabled selected>Select a Product...</option>
+        </select>
+      </div>
+
+
+      <div class="form-field">
+        <legend>Overall Rating</legend>
+        <div class="ratings">
+          <label>☆<input type="radio" name="rating" value="1" required></label>
+          <label>☆☆<input type="radio" name="rating" value="2" required></label>
+          <label>☆☆☆<input type="radio" name="rating" value="3" required></label>
+          <label>☆☆☆☆<input type="radio" name="rating" value="4" required></label>
+          <label>☆☆☆☆☆<input type="radio" name="rating" value="5" required></label>
+        </div>
+      </div>
+
+
+      <div class="form-field">
+        <label for="date">Date of Installation</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+
+      <div class="form-field">
+        <legend>Which features did yoy find most useful in this product?<br><em>(Check all that apply)</em></legend>
+        <label><input type="checkbox" id="durability" name="features" value="Durability">Durability</label>
+        <label><input type="checkbox" id="ease" name="features" value="yes">Ease of Use</label>
+        <label><input type="checkbox" id="performance" name="features" value="yes">Performance</label>
+        <label><input type="checkbox" id="design" name="features" value="yes">Design</label>
+      </div>
+
+
+      <div class="form-field">
+        <label for="writtenReview">Written Review <span id="optional">(Optional)</span></label>
+        <textarea id="writtenReview" name="writtenReview"></textarea>
+      </div>
+
+
+      <div class="form-field">
+        <label for="name">User Name <span id="optional">(Optional)</span></label>
+        <input type="text" id="name" name="name">
+      </div>
+
+
+      <div class="form-field">
+        <input type="submit" value="Post Review">
+      </div>
+    </form>
+  </main>
+
+
+  <footer>
+    &copy; <span id="currentYear"></span> | Brandon Arroyo | California, USA<br>
+    Last Updated: <span id="lastModified"></span>
+  </footer>
+</body>
+</html>

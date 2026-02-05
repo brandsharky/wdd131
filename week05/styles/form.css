@@ -1,0 +1,145 @@
+:root {
+  --blue: #005f73;
+  --white: #fafafa;
+  --teal: #0a9396;
+  --orange: #ee9b00;
+  --sand: #fefae0;
+  --black: #001219;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
+  background-color: var(--sand);
+}
+
+
+
+header {
+  padding: 1rem;
+
+  font-size: 1.5rem;
+  text-align: center;
+
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+main {
+  flex: 1;
+
+  display: grid;
+  place-items: center;
+
+  padding: 1rem;
+
+  background-color: var(--sand);
+  color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+form, #review {
+  max-width: 550px;
+
+  display: grid;
+  gap: 1.5rem;
+
+  padding: 1rem;
+
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 0.5rem;
+}
+#review {
+  text-align: center;
+
+  color: var(--black);
+}
+
+input[type="text"],
+input[type="submit"],
+textarea,
+input[type="date"],
+select {
+  width: 100%;
+
+  padding: 0.75rem;
+
+  border: 1px solid var(--black);
+  border-radius: 0.5rem;
+}
+
+.ratings {
+  display: flex;
+}
+label:has(input[type="radio"]) {
+  flex: 1;
+  display: grid;
+  place-content: center;
+}
+
+label:has(input[type="checkbox"]) {
+  display: block;
+
+  padding: 1rem 0;
+}
+label:has(input[type="checkbox"]) input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+  font-size: 1.25rem;
+
+  background-color: var(--orange);
+  color: var(--black);
+  border: none;
+
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+input[type="submit"]:hover {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+#optional {
+  font-size: 0.75rem;
+  color: var(--teal);
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  padding: 0.5rem 1rem;
+
+  font-size: 0.9rem;
+  text-align: center;
+
+  background-color: var(--blue);
+  color: var(--white);
+}
