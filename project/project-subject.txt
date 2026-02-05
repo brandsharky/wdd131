@@ -1,20 +1,7 @@
 W04: Website Subject
 
+The subject for my final project website will be sharks. I intent to have a nice oceanic color theme for the website, have a sufficient amount of images for visual aid, and lots of cool facts about sharks for the user to see. As for content, I intent to use paragraphs for user to easily read facts about sharks. I plan on making it responsive and web friendly.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+I chose this subject because sharks are my favorite animal. I feel that there is a lot of interesting information about sharks that would be nice to share with others. My website would be educational and helpful for those who want to learn some more about sharks.
 
 
