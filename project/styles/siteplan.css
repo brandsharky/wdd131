@@ -1,0 +1,134 @@
+:root {
+  --navy: #0B1C2D;
+  --blue: #1F6AE1;
+  --teal: #4FD1C5;
+  --white: #F5F7FA;
+  --black: #1F2933;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
+  font-family: "Inter", sans-serif;
+
+  background-color: var(--white);
+  color: var(--black);
+}
+
+
+
+header {
+  padding: 1rem;
+
+  text-align: center;
+
+  background-color: var(--navy);
+  color: var(--white);
+}
+header h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+
+
+main {
+  flex: 1;
+
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+
+  padding: 1rem;
+
+  font-weight: 400;
+}
+
+
+
+section {
+  display: grid;
+  gap: 1rem;
+
+  max-width: 1000px;
+
+  padding: 1rem;
+
+  background-color: white;
+  border-radius: 1rem;
+}
+section h2 {
+  width: fit-content;
+
+  padding: 0.5rem 1rem;
+
+  text-align: center;
+  font-weight: 600;
+
+  border: 1px solid var(--navy);
+  border-radius: inherit;
+}
+
+section ol {
+  list-style-position: inside;
+}
+
+section ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+section ul li {
+  flex: 1;
+
+  text-align: center;
+
+  padding: 0.5rem 1rem;
+}
+section ul li:nth-child(1) {background-color: var(--navy); color: white;}
+section ul li:nth-child(2) {background-color: var(--blue); color: white;}
+section ul li:nth-child(3) {background-color: var(--teal);}
+section ul li:nth-child(4) {background-color: var(--white);}
+section ul li:nth-child(5) {background-color: var(--black); color: white;}
+
+section figure {
+  display: grid;
+  justify-content: center;
+  gap: 0.5rem;
+
+  text-align: center;
+}
+
+
+
+section img {
+  width: 50%;
+  height: auto;
+
+  margin: 0 auto;
+
+  border: 3px solid var(--black);
+  border-radius: 1rem;
+}
+
+
+
+footer {
+  padding: 0.5rem 1rem;
+
+  text-align: center;
+  font-size: 0.8rem;
+
+  background-color: var(--navy);
+  color: var(--white);
+}
