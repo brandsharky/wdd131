@@ -53,9 +53,6 @@ main {
 
 
 
-
-
-
 form, #review {
   max-width: 550px;
 
@@ -119,15 +116,10 @@ input[type="submit"]:hover {
   color: var(--white);
 }
 
-#optional {
+.optional {
   font-size: 0.75rem;
   color: var(--teal);
 }
-
-
-
-
-
 
 
 
@@ -143,3 +135,15 @@ footer {
   background-color: var(--blue);
   color: var(--white);
 }
+
+
+
+
+
+@media screen and (max-width: 400px) {
+  main {
+    padding: 2rem 0.5rem;
+  }
+}
+
+
