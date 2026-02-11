@@ -1,7 +1,7 @@
 :root {
   --blue: #005f73;
   --white: #fafafa;
-  --teal: #0a9396;
+  --teal: #099295;
   --orange: #ee9b00;
   --sand: #fefae0;
   --black: #001219;
@@ -118,7 +118,7 @@ input[type="submit"]:hover {
 
 .optional {
   font-size: 0.75rem;
-  color: var(--teal);
+  color: navy;
 }
 
 
