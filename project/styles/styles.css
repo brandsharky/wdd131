@@ -6,7 +6,6 @@
   --white: #F5F7FA;
   --black: #1F2933;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -136,7 +135,10 @@ header nav {
   border-color: var(--teal);
   color: var(--teal);
 }
-
+.nav-links li .current-page {
+  border-color: var(--red);
+  color: var(--red);
+}
 
 
 @media screen and (max-width: 820px) {
